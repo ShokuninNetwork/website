@@ -77,6 +77,80 @@ h1 {
     text-transform: uppercase;
 }
 
+.carousel::after{
+    content: ' ';
+    padding-left: 1%;
+    margin-left: 1%;
+    animation: textrotate 5s ease-in-out infinite;
+    -webkit-animation: textrotate 5s ease-in-out infinite;
+}
+@keyframes textrotate{
+    0%{
+      background: rgba(5, 5, 5, 0.2);
+      content: 'PROJECTS';
+    }
+    1%{
+      content: 'PROJECTS';
+    }
+    9%{
+      content: 'PROJECTS';
+      background: rgba(0, 0, 0, 0.7);
+    }
+    10%{
+        visibility: hidden;
+    }
+    11%{
+        visibility: visible;
+    }
+    32%{
+      content: 'PLATFORMS';
+    }
+    33%{
+      content: 'platforms';
+    }
+    34%{
+      content: 'PLATFORMS';
+    }
+    35%{
+        visibility: hidden;
+    }
+    36%{
+        visibility: visible;
+    }
+    63%{
+      background: rgba(200, 200, 200, 0.4);
+      content: 'teams';
+    }
+    64%{
+      background: rgba(30, 30, 30, 0.6);
+      content: 'TEAMS';
+    }
+    65%{
+        visibility: hidden;
+    }
+    66%{
+      content: 'TEAMS';
+    }
+    67%{
+        visibility: visible;
+    }
+    97%{
+      background: rgba(10, 10, 10, 0.3);
+      content: 'GOODS';
+    }
+    98%{
+      background: rgba(80, 80, 80, 0.1);
+      content: 'GOODS';
+    }
+    99%{
+      visibility: hidden;
+    }
+    100%{
+      visibility: visible;
+      content: 'GOODS';
+    }
+}
+
 h2 {
     font-style: var(--fontStyletNormal);
     font-weight: var(--font500);
